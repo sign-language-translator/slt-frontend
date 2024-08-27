@@ -1,25 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+
+import "./App.css";
+import Grid from "@mui/material/Grid2";
+import { TextArea, Avatar } from "./components";
 
 function App() {
+  const [points, setPoints] = useState("");
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Grid
+        container
+        style={{
+          height: "calc(100vh - 1rem)",
+        }}
+        spacing={2}
+      >
+        <Grid size={{ xs: 12, md: 6 }}>
+          <TextArea placeholder="Type something here..." points={points} setPoints={setPoints} />
+        </Grid>
+        <Grid size={{ xs: 12, md: 6 }}>
+          <Avatar points={points} />
+        </Grid>
+      </Grid>
+    </>
   );
 }
 

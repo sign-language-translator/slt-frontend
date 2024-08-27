@@ -48,3 +48,12 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+### TODO
+
+- Add `React Helmet` for SEO
+- Add `React Router` for routing
+- Add `React Redux` for state management
+- Add `React i18next` for internationalization
+- Add `React Testing Library` for testing
+- Add `React Loadable` for code splitting
