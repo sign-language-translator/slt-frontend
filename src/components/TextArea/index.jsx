@@ -1,14 +1,6 @@
-import React, { Dispatch, SetStateAction } from "react";
+import React from "react";
 
-export default function index({
-  placeholder,
-  points,
-  setPoints,
-}: {
-  placeholder: string;
-  points: string;
-  setPoints: Dispatch<SetStateAction<string>>;
-}) {
+export default function index({ placeholder, points, setPoints }) {
   return (
     <textarea
       placeholder={placeholder}
