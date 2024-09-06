@@ -9,7 +9,8 @@ export default function Translator() {
       <Grid
         container
         style={{
-          height: "calc(100vh - 1rem)",
+          height: "calc(100vh - 2rem)",
+          width: "calc(100vw - 2rem)",
         }}
         spacing={2}
       >

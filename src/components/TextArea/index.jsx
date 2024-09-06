@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function index({ placeholder, points, setPoints }) {
+export default function TextArea({ placeholder, points, setPoints }) {
   return (
     <textarea
       placeholder={placeholder}
