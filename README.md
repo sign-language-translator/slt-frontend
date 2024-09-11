@@ -8,10 +8,9 @@ A **web GUI** of the [`sign-language-translator`](https://github.com/sign-langua
 
 <br/>
 
-[![Web Demo](https://img.shields.io/badge/%F0%9F%8C%90%20Website-slt.vercel.app-mediumpurple)](https://huggingface.co/sltAI)<br/>
+[![Web Demo](https://img.shields.io/badge/%F0%9F%8C%90%20Website-slt%E2%80%93ai.vercel.app-mediumpurple)](https://slt-ai.vercel.app/)<br/>
 [![GitHub Repo stars](https://img.shields.io/github/stars/sign-language-translator/slt-frontend?logo=github)](https://github.com/sign-language-translator/slt-frontend/stargazers)
-![GitHub Actions Workflow Status](https://img.shields.io/badge/build-passing-green?logo=github)
-<!-- ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/sign-language-translator/slt-frontend/workflow) -->
+![Deployment](https://img.shields.io/github/deployments/mdsrqbl/slt-frontend/production?label=vercel&logo=vercel&logoColor=white)
 
 | **Support Us** ❤️ | [![PayPal](https://img.shields.io/badge/PayPal-00457C?logo=paypal&logoColor=white)](https://www.paypal.com/donate/?hosted_button_id=7SNGNSKUQXQW2) |
 | - | - |
