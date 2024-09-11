@@ -1,56 +1,134 @@
 # Sign Language Translator Frontend
 
-React server delivering the functionality of [sign-language-translator](https://github.com/sign-language-translator/sign-language-translator) package.
+<div align="center">
 
-## Getting Started with Create React App
+<img width="30.9%" alt="SLT-frontend: Sign Language Translator Frontend logo" src="https://github.com/sign-language-translator/slt-frontend/blob/784d68a419e9c65c88129534b31dfbdd8270d456/public/logo512.png" />
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A **web GUI** of the [`sign-language-translator`](https://github.com/sign-language-translator/sign-language-translator) python package<br/>and a tool to create [`sign-language-datasets`](https://github.com/sign-language-translator/sign-language-datasets)<br/>made with React.
 
-### Available Scripts
+<br/>
 
-In the project directory, you can run:
+[![Web Demo](https://img.shields.io/badge/%F0%9F%8C%90%20Website-slt.vercel.app-mediumpurple)](https://huggingface.co/sltAI)<br/>
+[![GitHub Repo stars](https://img.shields.io/github/stars/sign-language-translator/slt-frontend?logo=github)](https://github.com/sign-language-translator/slt-frontend/stargazers)
+![GitHub Actions Workflow Status](https://img.shields.io/badge/build-passing-green?logo=github)
+<!-- ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/sign-language-translator/slt-frontend/workflow) -->
 
-#### `npm start`
+| **Support Us** ❤️ | [![PayPal](https://img.shields.io/badge/PayPal-00457C?logo=paypal&logoColor=white)](https://www.paypal.com/donate/?hosted_button_id=7SNGNSKUQXQW2) |
+| - | - |
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+</div>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+---
 
-#### `npm test`
+1. [Sign Language Translator Frontend](#sign-language-translator-frontend)
+   1. [Pages and Features](#pages-and-features)
+      1. [Translator](#translator)
+      2. [Customize](#customize)
+         1. [Sign Dictionary Annotation](#sign-dictionary-annotation)
+         2. [Sign Clip Extraction](#sign-clip-extraction)
+      3. [Synthetic Sentences](#synthetic-sentences)
+      4. [Learn](#learn)
+         1. [Walkthrough](#walkthrough)
+         2. [Courses](#courses)
+      5. [Documentation](#documentation)
+   2. [Local Setup](#local-setup)
+   3. [License and citation](#license-and-citation)
+   4. [ToDo / Contribution](#todo--contribution)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Pages and Features
 
-#### `npm run build`
+### Translator
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Translate bidirectionally between various text and sign languages using a variety of AI models.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+| ![translator](https://github.com/user-attachments/assets/7f62acfc-af12-4d76-8268-eea3e288a178) | ![slt-frontend-demo](https://github.com/user-attachments/assets/a863e8b5-ff42-4a90-b9ee-a0cdb73fdaad) |
+| - | - |
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Customize
 
-#### `npm run eject`
+Annotate sign language datasets and finetune AI models.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+#### Sign Dictionary Annotation
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Label video clips of individual words/signs with text gloss & text translation in various spoken languages and export the data as a mapping JSON. 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+![dictionary](https://github.com/user-attachments/assets/542e9755-6073-413c-98b8-5097ca19a739)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+#### Sign Clip Extraction
 
-### Learn More
+Specify sections of a long video which correspond to individual sentence, phrase or word, label them with text and export the data as mp4 clips a mapping JSON.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![cllip-extractor](https://github.com/user-attachments/assets/37ffbddf-1711-4555-800f-9d5bdae4aacd)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Synthetic Sentences
 
-### TODO
+Arrange sign dictionary videos into sequences and label them with equivalent spoken language texts.
 
+![parallel corpus](https://github.com/user-attachments/assets/e521f09b-6365-45e7-ae22-b5ae1feae809)
+
+### Learn
+
+Train yourself to use this tool or teach hearing-impaired students quality lessons.
+
+#### Walkthrough
+
+Start a step by step walkthrough on which components to click or watch a video tutorial.
+
+#### Courses
+
+Interactive lessons in sign language videos, text & audio.
+
+### Documentation
+
+Preview of the python library's documentation & research papers.
+
+## Local Setup
+
+1. Clone and install the project
+
+```bash
+git clone https://github.com/sign-language-translator/slt-frontend.git
+cd slt-frontend
+npm install
+```
+
+2. Start the development server
+
+```bash
+npm start
+```
+
+Open http://localhost:3000 to view it in the browser.
+
+3. Run tests
+
+```bash
+npm test
+```
+
+4. Build app for production
+
+```bash
+npm run build
+```
+
+## License and citation
+
+```bibtex
+@software{slt2024frontend,
+  author       = {Mudassar Iqbal},
+  title        = {Frontend for Sign Language Translator: Python Library and AI Framework},
+  year         = {2024},
+  publisher    = {GitHub},
+  howpublished = {\url{https://github.com/sign-language-translator/slt-frontend}},
+}
+```
+
+This project is licensed under the [Apache 2.0 License](https://github.com/sign-language-translator/slt-frontend/blob/main/LICENSE). You are permitted to use the project, create modified versions, or incorporate pieces of the code into your own work. Your product or research, whether commercial or non-commercial, must provide appropriate credit to the original author(s) by citing this repository.
+
+## ToDo / Contribution
+
+- Implement the features from the above GIFs
 - Add `React Helmet` for SEO
 - Add `React Router` for routing
 - Add `React Redux` for state management
