@@ -21,63 +21,71 @@ A **web GUI** of the [`sign-language-translator`](https://github.com/sign-langua
 
 1. [Sign Language Translator Frontend](#sign-language-translator-frontend)
    1. [Pages and Features](#pages-and-features)
-      1. [Translator](#translator)
-      2. [Customize](#customize)
-         1. [Sign Dictionary Annotation](#sign-dictionary-annotation)
-         2. [Sign Clip Extraction](#sign-clip-extraction)
-      3. [Synthetic Sentences](#synthetic-sentences)
-      4. [Learn](#learn)
-         1. [Walkthrough](#walkthrough)
-         2. [Courses](#courses)
-      5. [Documentation](#documentation)
+      1. [1. Translator](#1-translator)
+      2. [2. Customize](#2-customize)
+         1. [2.1 Sign Dictionary Annotation](#21-sign-dictionary-annotation)
+         2. [2.2 Sign Clip Extraction](#22-sign-clip-extraction)
+         3. [2.3 Synthetic Sentences](#23-synthetic-sentences)
+      3. [3. Learn](#3-learn)
+         1. [3.1 Walkthrough](#31-walkthrough)
+         2. [3.2 Courses](#32-courses)
+      4. [4. Documentation](#4-documentation)
    2. [Local Setup](#local-setup)
-   3. [License and citation](#license-and-citation)
-   4. [ToDo / Contribution](#todo--contribution)
+   3. [Directory Tree](#directory-tree)
+   4. [License and citation](#license-and-citation)
+   5. [ToDo / Contribution](#todo--contribution)
 
 ## Pages and Features
 
-### Translator
+### 1. Translator
 
 Translate bidirectionally between various text and sign languages using a variety of AI models.
 
-| ![translator](https://github.com/user-attachments/assets/7f62acfc-af12-4d76-8268-eea3e288a178) | ![slt-frontend-demo](https://github.com/user-attachments/assets/a863e8b5-ff42-4a90-b9ee-a0cdb73fdaad) |
-| - | - |
+| ![translator](https://github.com/user-attachments/assets/3b048c5d-3ebc-4f06-ba1b-8fa57b2ff38a) | ![slt-frontend-demo](https://github.com/user-attachments/assets/a863e8b5-ff42-4a90-b9ee-a0cdb73fdaad) |
+| :-: | :-: |
+| Design | Current |
 
-### Customize
+### 2. Customize
 
 Annotate sign language datasets and finetune AI models.
 
-#### Sign Dictionary Annotation
+#### 2.1 Sign Dictionary Annotation
 
 Label video clips of individual words/signs with text gloss & text translation in various spoken languages and export the data as a mapping JSON. 
 
-![dictionary](https://github.com/user-attachments/assets/542e9755-6073-413c-98b8-5097ca19a739)
+| ![dictionary](https://github.com/user-attachments/assets/542e9755-6073-413c-98b8-5097ca19a739) | |
+| :-: | :-: |
+| Design | Current |
 
-#### Sign Clip Extraction
+#### 2.2 Sign Clip Extraction
 
 Specify sections of a long video which correspond to individual sentence, phrase or word, label them with text and export the data as mp4 clips a mapping JSON.
 
-![cllip-extractor](https://github.com/user-attachments/assets/37ffbddf-1711-4555-800f-9d5bdae4aacd)
+| | ![cllip-extractor](https://github.com/user-attachments/assets/37ffbddf-1711-4555-800f-9d5bdae4aacd) |
+| :-: | :-: |
+| Design | Current |
 
-### Synthetic Sentences
+#### 2.3 Synthetic Sentences
 
 Arrange sign dictionary videos into sequences and label them with equivalent spoken language texts.
 
-![parallel corpus](https://github.com/user-attachments/assets/e521f09b-6365-45e7-ae22-b5ae1feae809)
+| | ![parallel corpus](https://github.com/user-attachments/assets/e521f09b-6365-45e7-ae22-b5ae1feae809) |
+| :-: | :-: |
+| Design | Current |
 
-### Learn
+### 3. Learn
 
 Train yourself to use this tool or teach hearing-impaired students quality lessons.
 
-#### Walkthrough
+#### 3.1 Walkthrough
 
 Start a step by step walkthrough on which components to click or watch a video tutorial.
 
-#### Courses
+#### 3.2 Courses
 
 Interactive lessons in sign language videos, text & audio.
 
-### Documentation
+### 4. Documentation
 
 Preview of the python library's documentation & research papers.
 
@@ -110,6 +118,41 @@ npm test
 ```bash
 npm run build
 ```
+
+## Directory Tree
+
+One line summary of each module.
+
+<details open>
+<summary><b><code>SLT-Frontend</code></b><!-- (click to expand)--></summary>
+<pre>
+├── <a href="https://github.com/sign-language-translator/slt-frontend/blob/main/LICENSE">LICENSE</a>
+├── <a href="https://github.com/sign-language-translator/slt-frontend/blob/main/README.md">README.md</a>
+├── <b>public</b>
+│   └── <a href="https://github.com/sign-language-translator/slt-frontend/blob/main/public/">*</a>
+└── <b>src</b>
+    ├── <a href="https://github.com/sign-language-translator/slt-frontend/blob/main/src/App.js">App.js</a>
+    ├── <a href="https://github.com/sign-language-translator/slt-frontend/blob/main/src/index.js">index.js</a>
+    ├── <b>components</b>
+    │   ├── <a href="https://github.com/sign-language-translator/slt-frontend/blob/main/src/components/index.jsx">index.jsx</a>  <sub><sup>export all components</sup></sub>
+    │   ├── <b>Avatar</b>
+    │   │   └── <a href="https://github.com/sign-language-translator/slt-frontend/blob/main/src/components/Avatar/index.jsx">index.jsx</a>  <sub><sup>three.js canvas with animated humanoid performing signs</sup></sub>
+    │   │
+    │   └── <b>TextArea</b>
+    │       └── <a href="https://github.com/sign-language-translator/slt-frontend/blob/main/src/components/TextArea/index.jsx">index.jsx</a>  <sub><sup>write multilingual text with mic, virtual keyboad & speaker. tag supported & ambiguous tokens. Get synonyms & translation suggestions.</sup></sub>
+    │
+    ├── <b>pages</b>
+    │   ├── <a href="https://github.com/sign-language-translator/slt-frontend/blob/main/src/pages/index.jsx">index.jsx</a>  <sub><sup>export all pages</sup></sub>
+    │   ├── <b>Landing</b>
+    │   │   └── <a href="https://github.com/sign-language-translator/slt-frontend/blob/main/src/pages/Landing/index.jsx">index.jsx</a>  <sub><sup>Welcome Page</sup></sub>
+    │   │
+    │   └── <b>Translator</b>
+    │       └── <a href="https://github.com/sign-language-translator/slt-frontend/blob/main/src/pages/Translator/index.jsx">index.jsx</a>  <sub><sup>Bidirectional translation between signs & text</sup></sub>
+    │
+    └── <b>utils</b>
+        └── <a href="https://github.com/sign-language-translator/slt-frontend/blob/main/src/utils/index.jsx">index.jsx</a>  <sub><sup>helpers</sup></sub>
+</pre>
+</details>
 
 ## License and citation
 
