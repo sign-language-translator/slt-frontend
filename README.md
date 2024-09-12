@@ -41,7 +41,7 @@ A **web GUI** of the [`sign-language-translator`](https://github.com/sign-langua
 
 Translate bidirectionally between various text and sign languages using a variety of AI models.
 
-| ![translator](https://github.com/user-attachments/assets/3b048c5d-3ebc-4f06-ba1b-8fa57b2ff38a) | ![slt-frontend-demo](https://github.com/user-attachments/assets/a863e8b5-ff42-4a90-b9ee-a0cdb73fdaad) |
+| ![translator](https://github.com/user-attachments/assets/1e1ad62f-6486-422d-b44a-94df315a6195) | ![slt-frontend-demo](https://github.com/user-attachments/assets/a863e8b5-ff42-4a90-b9ee-a0cdb73fdaad) |
 | :-: | :-: |
 | Design | Current |
 
@@ -53,7 +53,7 @@ Annotate sign language datasets and finetune AI models.
 
 Label video clips of individual words/signs with text gloss & text translation in various spoken languages and export the data as a mapping JSON. 
 
-| ![dictionary](https://github.com/user-attachments/assets/542e9755-6073-413c-98b8-5097ca19a739) | |
+| ![dictionary](https://github.com/user-attachments/assets/542e9755-6073-413c-98b8-5097ca19a739) | ![label](https://github.com/user-attachments/assets/8a033b45-732d-44bf-8e35-3df99ef24e22)<br/>![sen](https://github.com/user-attachments/assets/749defe5-966d-40e7-9e5d-08e9be707573) |
 | :-: | :-: |
 | Design | Current |
 
