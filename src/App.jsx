@@ -1,7 +1,7 @@
 import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
-import { Landing, Translator } from "./pages";
+import { Landing, Translator } from "@pages/index";
 
 function App() {
   const router = createBrowserRouter([

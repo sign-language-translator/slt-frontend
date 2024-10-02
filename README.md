@@ -51,7 +51,7 @@ Annotate sign language datasets and finetune AI models.
 
 #### 2.1 Sign Dictionary Annotation
 
-Label video clips of individual words/signs with text gloss & text translation in various spoken languages and export the data as a mapping JSON. 
+Label video clips of individual words/signs with text gloss & text translation in various spoken languages and export the data as a mapping JSON.
 
 | ![dictionary](https://github.com/user-attachments/assets/542e9755-6073-413c-98b8-5097ca19a739) | ![label](https://github.com/user-attachments/assets/8a033b45-732d-44bf-8e35-3df99ef24e22)<br/>![sen](https://github.com/user-attachments/assets/749defe5-966d-40e7-9e5d-08e9be707573) |
 | :-: | :-: |
@@ -91,33 +91,35 @@ Preview of the python library's documentation & research papers.
 
 ## Local Setup
 
+This react project was created using [Vite](https://dev.to/manojspace/migrating-from-create-react-app-to-vite-a-step-by-step-guide-2cab). To run this project locally, follow these steps:
+
 1. Clone and install the project
 
-```bash
-git clone https://github.com/sign-language-translator/slt-frontend.git
-cd slt-frontend
-npm install
-```
+    ```bash
+    git clone https://github.com/sign-language-translator/slt-frontend.git
+    cd slt-frontend
+    npm install
+    ```
 
 2. Start the development server
 
-```bash
-npm start
-```
+    ```bash
+    npm run start
+    ```
 
-Open http://localhost:3000 to view it in the browser.
+    Open http://localhost:3000/ to view it in the browser.
 
 3. Run tests
 
-```bash
-npm test
-```
+    ```bash
+    npm run test
+    ```
 
 4. Build app for production
 
-```bash
-npm run build
-```
+    ```bash
+    npm run build
+    ```
 
 ## Directory Tree
 
@@ -128,11 +130,12 @@ One line summary of each module.
 <pre>
 ├── <a href="https://github.com/sign-language-translator/slt-frontend/blob/main/LICENSE">LICENSE</a>
 ├── <a href="https://github.com/sign-language-translator/slt-frontend/blob/main/README.md">README.md</a>
+├── <a href="https://github.com/sign-language-translator/slt-frontend/blob/main/index.html">index.html</a>
 ├── <b>public</b>
 │   └── <a href="https://github.com/sign-language-translator/slt-frontend/blob/main/public/">*</a>
 └── <b>src</b>
-    ├── <a href="https://github.com/sign-language-translator/slt-frontend/blob/main/src/App.js">App.js</a>
-    ├── <a href="https://github.com/sign-language-translator/slt-frontend/blob/main/src/index.js">index.js</a>
+    ├── <a href="https://github.com/sign-language-translator/slt-frontend/blob/main/src/App.jsx">App.jsx</a>  <sub><sup>routes</sup></sub>
+    ├── <a href="https://github.com/sign-language-translator/slt-frontend/blob/main/src/index.js">main.jsx</a>
     ├── <b>components</b>
     │   ├── <a href="https://github.com/sign-language-translator/slt-frontend/blob/main/src/components/index.jsx">index.jsx</a>  <sub><sup>export all components</sup></sub>
     │   ├── <b>Avatar</b>

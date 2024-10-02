@@ -1,9 +1,10 @@
-import { Environment, OrbitControls, useGLTF, Stats } from "@react-three/drei";
+import { OrbitControls, useGLTF } from "@react-three/drei";
+// import { Environment, Stats } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
-import React from "react";
 import * as THREE from "three";
 import "./index.css";
-import { isJsonString } from "../../utils";
+import { isJsonString } from "@utils/index";
+// import PropTypes from 'prop-types';
 
 // function AvatarGLTF({ url, texture, animations, basePosition, idleAnimation, transformFuctions, scale }) {
 //   return <primitive />;
