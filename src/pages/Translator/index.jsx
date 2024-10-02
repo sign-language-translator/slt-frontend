@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Grid from "@mui/material/Grid2";
-import { Avatar, TextArea } from "../../components";
+import { Avatar, TextArea } from "@components/index";
 
 export default function Translator() {
   const [points, setPoints] = useState("");
